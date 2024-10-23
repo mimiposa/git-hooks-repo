@@ -12,7 +12,7 @@ REGEX='^(feat|fix|docs|style|refactor|test|chore|build|ci|perf|revert|release)(\
 
 if ! echo "$COMMIT_MSG" | grep -Eq "$REGEX"; then
     echo "ERROR: Invalid commit message format."
-    echo "Commit message should be in the format of:"
+    echo "Commit message should be in the following format:"
     echo "  <type>(<scope>): <description>"
     echo "Examples:"
     echo "  feat(lang): added English"
